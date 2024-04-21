@@ -1,0 +1,217 @@
+@font-face {
+    font-family: "Roboto-Bold";
+    src: url(assets/fonts/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Roboto-Regular";
+    src: url(assets/fonts/Roboto-Regular.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: hsl(235, 18%, 26%);
+}
+
+.sign-up {
+    max-width: 840px;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: hsl(0, 0%, 100%);
+    padding: 2em 0 2em 1.4em;
+    border-radius: 1em;
+}
+
+.left, .right{
+    /* height: 100%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sign-up .left {
+    width: 50%;
+    padding: 1em 1.4em 1.3em;
+    height: 200px;
+}
+
+.left h2 {
+    color: hsl(234, 29%, 20%);
+    font-size: 2.4em;
+    font-weight: 700;
+    font-family: "Roboto-Bold";
+    margin-top: 1.3em;
+}
+
+.left .join {
+    color: hsl(235, 18%, 26%);
+    font-size: .9em;
+    line-height: 1.4em;
+    font-weight: 600;
+    font-family: "Roboto-Regular";
+    margin-top: .8em;
+    margin-bottom: 1.2em;
+}
+
+.left .prod {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+}
+
+.prod p {
+    display: flex;
+    gap: 12px;
+    margin-bottom: .8em;
+    color: hsl(235, 18%, 26%);
+    font-size: .8em;
+    font-weight: 600;
+    font-family: "Roboto-Regular";
+}
+
+.prod p img {
+    width: 16px;
+    height: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.3em;
+    margin-bottom: 1.3em;
+    color: hsl(234, 29%, 20%);
+    font-size: .6em;
+    font-weight: 500;
+    font-family: "Roboto-Bold";
+}
+
+form label p {
+    display: flex;
+    justify-content: space-between;
+}
+
+label input {
+    width: 100%;
+    outline: none;
+    border: 1px solid hsl(231, 7%, 60%);
+    padding: 1.3em 1.3em 1.3em 1.5em;
+    border-radius: .5em;
+    margin-top: .7em;
+    font-size: 1.1em;
+    color: hsl(231, 7%, 60%);
+}
+
+label input::placeholder {
+    color: hsl(234, 29%, 20%);
+}
+
+label input:focus {
+    border: 1px solid hsl(234, 29%, 20%);
+}
+
+form input[type="button"] {
+    width: 100%;
+    background: hsl(234, 29%, 20%);
+    border: none;
+    outline: none;
+    padding: 1em 1.3em;
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+    font-size: .9em;
+    font-family: "Roboto-Regular";
+    font-weight: 500;
+    border-radius: .6em;
+    margin: .4em 0 2em;
+    cursor: pointer;
+}
+
+form input[type="button"]:hover {
+    background: hsl(4, 100%, 67%);
+}
+
+.sign-up .right {
+    width: 50%;
+}
+
+.right .mobile {
+    display: none;
+}
+
+.right .desktop {
+    width: 460px;
+    height: 450px;
+    
+}
+
+.success-message {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    background: hsl(0, 0%, 100%);
+    padding: 2em;
+    border-radius: 1em;
+}
+
+.success-message img {
+    width: 33px;
+    height: 33px;
+}
+
+.success-message h3 {
+    color: hsl(234, 29%, 20%);
+    font-size: 1.8em;
+    font-family: "Roboto-Bold";
+    font-weight: 800;
+    margin: .8em 0;
+    line-height: 1em;
+}
+
+.success-message p {
+    font-size: .7em;
+    line-height: 1.3em;
+    color: hsl(235, 18%, 26%);
+}
+
+.success-message p span {
+    color: hsl(234, 29%, 20%);
+}
+
+.success-message button {
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: .6em;
+    padding: 1em;
+    margin-top: 1.3em;
+    color: hsl(0, 0%, 100%);
+    font-size: .7em;
+    background: hsl(234, 29%, 20%);
+    cursor: pointer;
+}
+
+.success-message button:hover {
+    background: hsl(4, 100%, 67%);
+}
